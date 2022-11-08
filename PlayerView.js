@@ -16,16 +16,28 @@ exports.GetHand = class extends React.Component {
         <br />
         <button
           disabled={!playable}
-          onClick={() => parent.playHand('ROCK')}
-        >Rock</button>
+          onClick={() => parent.playHand('0')}
+        >0</button>
         <button
           disabled={!playable}
-          onClick={() => parent.playHand('PAPER')}
-        >Paper</button>
+          onClick={() => parent.playHand('1')}
+        >1</button>
         <button
           disabled={!playable}
-          onClick={() => parent.playHand('SCISSORS')}
-        >Scissors</button>
+          onClick={() => parent.playHand('2')}
+        >2</button>
+        <button
+          disabled={!playable}
+          onClick={() => parent.playHand('3')}
+        >3</button>
+        <button
+          disabled={!playable}
+          onClick={() => parent.playHand('4')}
+        >4</button>
+        <button
+          disabled={!playable}
+          onClick={() => parent.playHand('5')}
+        >5</button>
       </div>
     );
   }
