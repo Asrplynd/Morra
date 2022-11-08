@@ -1,7 +1,7 @@
 import React from 'react';
-import AppViews from './AppViews';
-import DeployerViews from './DeployerView';
-import AttacherViews from './AttacherView';
+import AppViews from './views/AppViews';
+import DeployerViews from './views/DeployerViews';
+import AttacherViews from './views/AttacherViews';
 import {renderDOM, renderView} from './views/render';
 import './index.css';
 import * as backend from './build/index.main.mjs';
@@ -13,7 +13,7 @@ import { ALGO_MyAlgoConnect as MyAlgoConnect }
 reach.setWalletFallback(reach.walletFallback({
   providerEnv: 'TestNet', MyAlgoConnect }));
 
-const handToInt = {'ROCK': 0, 'PAPER': 1, 'SCISSORS': 2};
+const handToInt = {'ZERO': 0, 'ONE': 1, 'TWO': 2, 'THREE': 3, 'FOUR': 4, 'FIVE': 5};
 const intToOutcome = ['Bob wins!', 'Draw!', 'Alice wins!'];
 const {standardUnit} = reach;
 const defaults = {defaultFundAmt: '10', defaultWager: '3', standardUnit};
